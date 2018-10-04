@@ -71,6 +71,7 @@ pipeline {
          * Multiline strings can be used for larger scripts. It is also possible to put scripts in your shared library
          * and load them with 'libaryResource'
          */
+        sh 'echo build'
 //        sh """
 //          docker build -t ${IMAGE} .
 //          docker tag ${IMAGE} ${IMAGE}:${VERSION}
