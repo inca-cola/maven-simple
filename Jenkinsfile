@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    node { label 'docker' }
+    node { label 'cloudbees/jnlp-slave-with-java-build-tools:latest' }
   }
 
   options {
