@@ -1,6 +1,12 @@
+#!groovy
+
 pipeline {
   agent {
-    node { label 'docker' }
+    //node { label 'docker' }
+    docker {
+      reuseNode true
+      image 'maven:3.5.4-jdk-8'
+    }
   }
 
   options {
